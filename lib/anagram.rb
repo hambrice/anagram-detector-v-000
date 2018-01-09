@@ -6,8 +6,9 @@ class Anagram
   end
   def match(array)
     word = @word.split("").sort
-    alpha_array = array.each do |option|
-      option = option.split("").sort.join
+    alpha_array = []
+    array.each do |option|
+      alpha_array << option.split("").sort.join
       binding.pry
     end
 end
