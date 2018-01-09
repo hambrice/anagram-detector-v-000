@@ -5,7 +5,7 @@ class Anagram
     @word = word
   end
   def match(array)
-    word = @word.split("")
+    word = @word.split("").sort
     binding.pry
 end
 end
